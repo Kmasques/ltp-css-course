@@ -14,7 +14,7 @@
                 }
             .headertextcolor
                 {
-                color: white;
+                text-color: white;
                 }
             
             then by adding it to the tags you want to affect:
@@ -23,31 +23,58 @@
 
             You can apply this class to as many elements and you want, regardless if it is header tag or a paragraph tag.  You can also apply more than one class to a single element, i.e.:
 
-                <h1 class="headerstyle" class="headertextcolor">Welcome to My New Website!</h1>
+                <h1 class="headerstyle headertextcolor">Welcome to My New Website!</h1>
 
                 Just note that there are no periods or commas between the classes, as above.
 
+
             ID Selector
 
+            Three main differences between the Class and the ID selector:
+            1.  The ID selector is only paired with one element, so you are basically going to create a specific style that is only going to one specific element.
+            2.  Each element can only have one ID selector.
+            3.  ID selectors have higher priorities than class selectors.  The ID selector would override the class selector within that element.
+
+            You would use a # to indicate an ID selector:
             
+            #mostimportantinfo
+                {
+                background-color: lightpink;
+                color: darkred;
+                }
+            
+            then in the body:
+            <p id="mostimportantinfo">Phone Number: (555) 555-5555</p>
         -->
         
         <style>
-            
+            .headerstyle
+                {
+                background-color: lightgreen;
+                }
+            .headertextcolor
+                {
+                color: darkblue;
+                }
+            #mostimportantinfo
+                {
+                background-color: lightpink;
+                color: darkred;
+                }
         </style>
     
     
     </head>
     <body>
-        <h1>Welcome to My New Website!</h1>
+        <h1 class="headerstyle headertextcolor">Welcome to My New Website!</h1>
         <p>Welcome to my site! Be sure to check back often because I will be additing lots of great new content!</p>
         
-        <h3>Here's my contact info:</h3>
+        <h3 class="headerstyle">Here's my contact info:</h3>
         <p>Name: Andrew Snyder-Spak</p>
         <p>Address: 123 Main Street</p>
         <p>Town: Vernon</p>
         <p>State: Connecticut</p>
-        <p>Phone Number: (555) 555-5555</p>
+        <p id="mostimportantinfo">Phone Number: (555) 555-5555</p>
         
     </body>
 
