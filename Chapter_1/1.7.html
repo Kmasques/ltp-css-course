@@ -4,7 +4,21 @@
         <title>3 Methods of Linking in CSS</title>
         
         <!-- 
+            Three different methods of linking your CSS code to your HTML5 file.
+
+        1. Create an external CSS file by creating a new file in brackets by going to File>New, and save with Name of file then .css, which tells the computer that it is a CSS file and not just text. Save it in the same folder as the HTML5 file is saved.  Pute your selectors in the .css file and save:
             
+            h1
+                {
+                background-color: black;
+                color: white;
+                }
+            
+            Don't put <style> or anything else in there.  Save the file, then in your HTML5 file, under <head>, you put:
+            <link rel:"stylesheet" href="Name.css">
+            This is good when you have a lot of styles across your whole website and saves a lot of time and code.  You only need to change your styles in one spot when you need to.
+
+        2.  
         -->
         
         <style>
@@ -14,7 +28,21 @@
     
     </head>
     <body>
-
+        
+        <h1>Welcome to My New Website!</h1>
+        
+        <p>Please be sure to check back often because I will be adding lots of great new content!</p>
+        
+        <h3>Here is a list of my top 3 favorite colors:</h3>
+        
+        <ol>
+            <li>Red</li>
+            <li>Green</li>
+            <li>Yellow</li>
+        
+        </ol>
+        
+        
         
     </body>
 
