@@ -2,7 +2,9 @@
 <html>
     <head>
         <title>Complex Selectors in CSS</title>
-        <!-- selectors are h1, p, body, etc. under the <style> tag. You can use selectors singly or in multiple, ie: 
+        
+        <!-- selectors are h1, p, body, etc. under the <style> tag. You can use selectors singly or in multiple, ie:
+
             h1
             h1, p, body
                 {
@@ -11,7 +13,7 @@
                     etc.
                 }
              
-        You need to understand the ancestor, descendent relationship in HTML:
+        You need to understand the ancestor, descendent relationship in terms of HTML and CSS:
         The ancestor is the tag that came before the other tags, ie:
         <html> tag is the ancestor of everything that comes after it. The <body> tag is the ancestor of the descendents that are contained within it.
 
@@ -20,8 +22,19 @@
                 {
                     background-color: yellow;
                 }
+        this basically says that all paragraph tags that are a descendent of the unordered list tag (ul) gets a certain rule. 
+                    
         Parent-child relationship in CSS:
+        A more specific relationship that only applies to one degree of separation, ie:
+        <p>Here is a link to my favorite search engine: <a href="http://www.google.com">GOOGLE</a></p>
+        <p></P> tags are the parent to the <a></a> tags, as the <a> tags are contained within the <p> tags.
+        To make the <a> tag within the parent purple, do the following:
         
+            p>a
+                {
+                background-color: purple;
+                }
+            this says: all <a> tags that are the child of a <p> tag will be purple.
         -->
         
         <style>
@@ -40,7 +53,10 @@
                 color: #8f00ff; 
                 text-align: left;
                 }
-        
+            p>a
+                {
+                background-color: purple;
+                }
         </style>
     
     
@@ -53,7 +69,7 @@
             <li><p>Paragraph 1</p></li>
             <li><p>Paragraph 2</p></li>
             <li><p>Paragraph 3</p></li>
-            <li><p>Anchor 1</p></li>
+            <li><a>Anchor 1</a></li>
         </ul>
     
     
