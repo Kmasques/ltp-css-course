@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Complex Selectors in CSS</title>
+        <!-- selectors are h1, p, body, etc. under the <style> tag. You can use selectors singly or in multiple, ie: 
+            h1
+            h1, p, body
+                {
+                    add css rule
+                    add css rule
+                    etc.
+                }
+             
+        You need to understand the ancestor, descendent relationship in HTML:
+        The ancestor is the tag that came before the other tags, ie:
+        <html> tag is the ancestor of everything that comes after it. The <body> tag is the ancestor of the descendents that are contained within it.
+
+        To affect all decendents of an ancestor, you can do the following:
+            ul p  [leave a space, not a comma between the ancestor and descendent]
+                {
+                    background-color: yellow;
+                }
+        Parent-child relationship in CSS:
+        
+        -->
+        
+        <style>
+            
+            body
+                {
+                background-color: lavenderblush;
+                }
+            h1
+                {
+                color: black;
+                background-color: blanchedalmond;
+                }
+            p
+                {
+                color: #8f00ff; 
+                text-align: left;
+                }
+        
+        </style>
+    
+    
+    </head>
+    <body>
+        <h1>Welcome to My New Website!</h1>
+        <p>Here is a link to my favorite search engine: <a href="http://www.google.com" target="_blank">GOOGLE</a></p>
+        
+        <ul>
+            <li><p>Paragraph 1</p></li>
+            <li><p>Paragraph 2</p></li>
+            <li><p>Paragraph 3</p></li>
+            <li><p>Anchor 1</p></li>
+        </ul>
+    
+    
+    </body>
+
+
+</html>
