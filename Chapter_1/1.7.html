@@ -16,15 +16,40 @@
                 }
             
             Don't put <style> or anything else in there.  Save the file, then in your HTML5 file, under <head>, you put:
-            <link rel:"stylesheet" href="Name.css">
+                    <link rel="stylesheet" href="MyCSS.css">
             This is good when you have a lot of styles across your whole website and saves a lot of time and code.  You only need to change your styles in one spot when you need to.
 
-        2.  
+        2.  Internally linked CSS:
+            What we have been using up until this point-
+            
+            <style>
+
+                h1
+                    {
+                    background-color: blueviolet;
+                    color: white;
+                    }
+                li
+                    {
+                    background-color: red;
+                    color: white;
+                    }
+            </style>
+
+            Use style tags and use in the <head> section. You would use this when you have one specific page that you want to have a unique look and/or styling. 
+
+        3.  In-line CSS Linking:
+            Where you can apply styles, CSS rules, and linking to one specific element on your page. 
+
+            You would:
+            
+            <li style="background-color: blue; color: white;">Orange</li>
+
+
+
         -->
         
-        <style>
 
-        </style>
     
     
     </head>
