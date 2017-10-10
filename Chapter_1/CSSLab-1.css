@@ -1,15 +1,23 @@
-                p>a
-                    {
-                    background-color: orange;
-                    }
-                h1, h2, h3, h4
-                    {
-                    background-color: lightblue;
-                    }
+   
+       /*  Only anchor tags (<a>) that are contained within a paragraph tag (<P>) should have a background           color of orange.  Use parent/child selector of p>a. */  
+                    p>a
+                        {
+                            background-color: orange;
+                        }
+
+        /* All header tags have to have a light blue background. Use series of selectors */
+                    h1, h2, h3, h4
+                        {
+                        background-color: lightblue;
+                        }
+
+        /* In the unordered list (<ul>), only cities that are located within the U.S. should have a text             color of green.  Use class selector */
                 .textcolor
                     {
                     color: green;
                     }
+
+        /* only paragraph tags in an unordered list should have a yellow background.  An example of ancestor/descent relationship.  Use <ul> tag followed by space then <p> tag  */
                 ul p
                     {
                     background-color: yellow;
