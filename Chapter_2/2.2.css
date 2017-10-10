@@ -1,6 +1,7 @@
-.poem
+.testparagraph
     {
-    white-space: pre-wrap;
-    text-align: center;
-    text-decoration: underline;
+    font-weight: bold;
+    font-style: italic;
+    font-family: "Arial", sans-serif; 
+    font-size: 28px;
     }
