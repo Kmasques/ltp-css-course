@@ -1,46 +1,47 @@
 #table_style
     { 
-
-        
+        border: 1px solid black;
+        border-collapse: collapse;
+        background-color: bisque;
     }
 
 #table_style th
     {
-    
-    
+        border: 1px solid black;
+        padding: 10px;
+        color: darkblue;
     }
 
 #table_style td
     {
-    
-    
-    
+        border: 1px solid black;    
+        padding: 10px;    
     }
+
+    /* list-style-postion determines whether the bullets or number is considered as part of the word when centering or aligning within the cell.  list-style-position: inside considers the bullet or number to be part of the word and center it as part of it.  list-style-position: outside only considers the word when centering or aligning within the cell. */
+
+    /* list-style-type: is used to change the type of bullet you would use */
 
 #ul_1
     {
-    
-    
-    
+    list-style-position: inside;
+    list-style-type: square;
     }
 
 #ul_2
     {
-    
-    
-    
+    list-style-position: outside;    
+    list-style-type:lower-alpha;
     }
 
 #ol_1
     {
-    
-    
-    
+    list-style-position: inside;    
+    list-style-type:lower-greek;
     }
 
 #ol_2
     {
-    
-    
-    
+    list-style-position: outside;    
+    list-style-type:armenian;
     }
