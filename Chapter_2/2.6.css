@@ -1,0 +1,27 @@
+.main_body
+    {
+    width: 1000px;
+    height: 600px;
+    background-image: url('Tree_Graphic.png'), url('Background_Gradient.jpg');
+    background-repeat: no-repeat, repeat-x;
+    background-position: right bottom, left top;
+    }
+
+    /* You can add images to be used in the background by using:
+       background-image: url('location of image') note: use one quote mark only for this.  The image will repeat as its default size repeatedly.
+        To adjust the image size:
+        background-size: auto auto; this is the x and y axis and using the automatic values of the image.
+        Use actual pixel values to adjust the size of the image:
+        background-size: 50px 250px; this will give you narrow and tall
+        Can also use percentages:
+        background-size: 100% 50%; this will give you long and short
+        To give a background theme using more than one image at the same time:
+        background-image: url('location'), url('location'); you specify by using a comma between only
+    */
+
+
+h1
+    {
+    color: lightblue;
+    font-size: 50px;
+    }
