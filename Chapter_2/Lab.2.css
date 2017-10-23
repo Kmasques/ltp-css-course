@@ -1,3 +1,12 @@
+.main_body
+    {
+    width: 1000px;
+    height: 600px;
+    background-image: url('Lab_2_Image_2.png');
+    background-repeat: no-repeat;
+    background-position: right bottom, left top;
+    }
+
 #my_menu .submenu ul
     {
     display: none;
@@ -9,9 +18,8 @@
     border-bottom: 3px solid lightblue;
     margin-top: 0px;
     padding: 10px;
-        
+    font-size: 14px;
     }
-
 #my_menu .submenu:hover ul
     {
     display: block;
@@ -24,10 +32,21 @@
 
 #my_menu td
     {
-    padding-left: 25px;
-    padding-right: 25px;
+    padding-left: 10px;
+    padding-right: 10px;
     }
 
+
+
+h1
+{
+    font-family: marcellus;   
+}
+
+ul
+{
+    list-style: square;
+}
 
 
 
