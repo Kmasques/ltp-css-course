@@ -4,6 +4,7 @@
     height: 600px;
     background-image: url('Lab_2_Image_2.png');
     background-repeat: no-repeat;
+    background-size: 50% 70%;
     background-position: right bottom, left top;
     }
 
@@ -13,12 +14,12 @@
     position: fixed;
     background-color: lightblue;
     list-style-type: none;
-    border-left: 3px solid lightblue;
-    border-right: 3px solid lightblue;
-    border-bottom: 3px solid lightblue;
+    border-left: 3px solid burlywood;
+    border-right: 3px solid burlywood;
+    border-bottom: 3px solid burlywood;
     margin-top: 0px;
     padding: 10px;
-    font-size: 14px;
+    font-size: 18px;
     }
 #my_menu .submenu:hover ul
     {
@@ -27,7 +28,7 @@
 
 #my_menu
     {
-    background-color: lightblue;
+    background-color: burlywood;
     }
 
 #my_menu td
