@@ -1,0 +1,35 @@
+/*
+
+
+*/ 
+
+
+#scroll_box
+    {
+    
+    }
+
+ #image
+    {
+        padding: 0px 0px 0px 0px;
+        border: none;
+        margin: 0px 0px 0px 0px;
+        outline: 2px dashed red;
+        width: 170px;
+        height: 170px;
+    }
+
+ #text
+    {
+        border: none;
+        margin: 0px 0px 0px 0px;
+        outline: 2px dashed red;
+        width: 20%;
+        height: 170px;
+    }
+
+
+
+
+
+
