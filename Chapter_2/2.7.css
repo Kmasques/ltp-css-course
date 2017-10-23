@@ -1,13 +1,35 @@
-
-    }
-
-    /* 
-
-    */
-
-
-h1
+#title
     {
-    color: lightblue;
-    font-size: 50px;
+    background: url("Sprite%20Sheet%20Text.jpg") 0px 0px;
     }
+
+#title:hover
+    {
+    background: url("Sprite%20Sheet%20Text.jpg") -400px 0px;
+    }
+
+.ie .sprite
+    {
+    background: url("browsers-icons.jpg") 0px 0px;
+    }
+
+.firefox .sprite
+    {
+    background: url("browsers-icons.jpg") -80px 0px;
+    }
+
+.safari .sprite
+    {
+    background: url("browsers-icons.jpg") -160px 0px;
+    }
+
+.chrome .sprite
+    {
+    background: url("browsers-icons.jpg") -240px 0px;
+    }
+
+.opera .sprite
+    {
+    background: url("browsers-icons.jpg") -320px 0px;
+    }
+
