@@ -1,0 +1,17 @@
+/*
+    You can do a border around your images and text. Just note that some of the border styles will affect the color of the border depending on what you choose. You can also have each side be a different color if you want.
+    Border-radius will allow you to give rounded off corners to your borders.
+    
+*/ 
+
+
+#image
+    {
+        padding: 5px;
+        border-style: ridge;
+        border-width: 10px;
+        border-color: aqua purple green pink;
+        border-radius: 15px;
+        
+    }
+
