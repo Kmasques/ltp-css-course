@@ -1,0 +1,47 @@
+/*
+    Inline is the default display for the images.
+    If there is a "return" between the images and they are not on the same line, this will cause a gap between the images that look like padding.
+    Adding randome padding will jumble up the images, which is okay if that is what you want.
+    Display: block will have each of the images on their own line
+    There will be a bit of a margin added to the left of the image giving space between them and the browswer window.  This is the default.  If you do not want this, adjust in the body area (see below).
+    If you put padding between the images (top and bottom), these will be staked, ie.: padding 20px + padding 20px = padding 40px.
+    If you use margin to added space between images, it has an inherent quality which will collapse to only one of the margin amounts: margin 20px + margin 20px = 20 px.
+    If you didn't want the margin to do this automatically, you can set the overflow property to anything other than the default which is visible. You can also alternatively set the display to inline block which get rid of the issue of margins being collapsed.
+    
+
+    
+*/ 
+
+.small-box
+    {
+    padding: 0 0 0 0;
+    margin: 0 0 0 0;
+    border: none;
+    display: inline;
+    
+    }
+        
+#Pic1
+    {
+    padding: 10px 5px 20px 35px;
+    }
+
+#Pic2
+    {
+    
+    }
+
+#Pic3
+    {
+    
+    }
+
+#Pic4
+    {
+    
+    }
+
+body
+{
+    margin: 0 0 0 0;
+}
