@@ -1,0 +1,38 @@
+/*
+    text width percentage is the percentage of the parent element (screen width). 
+    image width percentage shrinks the entire image so it doesn't get distorted. If we change the height and  width, it will resize the image in relation to that.
+    When you set a specific height and width of the text, and the dashed box is too small for all the text to fit, the text will continue to flow outside the dashed box.  You need to use the overflow property which will give you different options as to how you want to handle this. Visible is the default; hidden will stop at the dashed lines; scroll will add scroll bars that will allow you to scroll the text.  This property doesn't really work with images, though you can use this property. You would have to use a container with images to get this to work.  
+
+    Use the div container "scroll box with the image to enable the overflow features of hidden, scroll, etc.
+    
+*/ 
+
+
+#scroll_box
+    {
+        padding: 0px 0px 0px 0px;
+        border: none;
+        margin: 0px 0px 0px 0px;
+        outline: 2px dashed red;
+        width: 150px;
+        height: 150px;
+        overflow: scroll;
+        
+    }
+
+ #text
+    {
+        padding: 0px 0px 0px 0px;
+        border: none;
+        margin: 0px 0px 0px 0px;
+        outline: 2px dashed red;
+        width: 200px;
+        height: 200px;
+        overflow: scroll;
+    }
+
+
+
+
+
+
