@@ -1,0 +1,32 @@
+/*
+    1.  Image should have a height and width of 200px each.
+    2.  Image should float on the right side of the page.
+    3.  Image should have a 10px wide "dashed" blue border, alternating between blue and red.
+    4.  Image should have a margin of 60 px on the top and bottom, and 20px on left and right.
+    5.  Image should have a 25px wide "groove" yellow outline all the way around.
+
+*/ 
+
+
+.image
+    {
+        background-color: red;
+        float: right;
+
+        width: 200px;
+        height: 200px;
+
+        padding: 5px 5px 5px 5px;
+        border: 10px dashed blue;
+        margin: 60px 20px 60px 20px;
+        outline: 25px groove yellow;
+    
+    }
+
+
+
+
+
+
+
+
