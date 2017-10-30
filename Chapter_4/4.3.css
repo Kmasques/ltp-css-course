@@ -1,0 +1,20 @@
+    /* 
+
+
+
+    */
+
+p
+    {
+        width: 100px;
+        height: 100px;
+        background-color: red;
+        
+        animation: colorChange 4s;
+    }
+
+@keyframes colorChange
+    {
+        from {background-color: red;}
+        to {background-color: blue;}
+    }
