@@ -1,3 +1,13 @@
+    /* The transform property allows you to move modify the image by moving it or changing its size, etc.
+        The tranformation values you can use do few things: scale allows you to shrink or grow an image, etc.
+        Translate moves the image the amount of pixels you ask it to. Best to put an x or y after to specify which way you want it to go.  The default is in the x direction, but  better to specify it.
+        Important not to put a space between #left:hover as it will not work if there is one.
+        The scale feature will scale the image up or down. If you leave it with the hover feature, it creates a cool but awkward effect.
+        The rotate feature rotates the image the amount of degrees you set. The default is clockwise. To rotate it counter-clockwise, you would use a negative number.
+        The skew feature of the transform property, you can basically change the angle which can give a 3D effect, and you would use degrees to do this. You can skew in both directions by doing skew (45deg, 15 deg). If you put 0deg, that is basically changing nothing.
+        
+    */
+
 body
     {
     
@@ -15,17 +25,21 @@ body
 
 #left
     {
-    left: hover
-        {
-            
-        }
+        transform: skew(45deg, 15deg);
     }
+    #left:hover
+        {
+           
+        }
+    
 
 #right
     {
-    right: hover
-        {
-            
-        }
+        
     }
+    #right:hover
+        {
+           
+        }
+    
 
