@@ -1,10 +1,23 @@
-    /* 
-        
+    /* A simple tab animation that reveals a link to click which refreshes the page. If you hold your cursor over the link, both the size of the tab increases and the background color fades from gray to a pinkish red color. If you move the cursor off, it hides itself again.
+    To make this happen, set the margin on the left and right to allow the tab space to slide out.
+    Within the slider element:
+    First thing was to set the position of the slider element, so it was set 200px from the top.
+    Set the position to absolute so that we won't have to worry about margins or anything else. It will be set absolutely all the way to the left.
+    Set the position to left at 0px so it will be flush left to the margin.
+    Set explicity the height of the element with the height of 30px, and the line-height of 30px.
+    Set the width of the element to 0px as we don't want any of the text displayed, and also set the overflow to hidden as we don't want any text to show.
+    If you only did these two things, nothing would show.  In order to have the little gray tab to show, we put padding-left at 15px with a background color of grey.
+    Then put a border around it to make it a little more professional looking, and then added the radius modifier to curve the corners of the tab.
+    Added the transition property adding two values: a width of 2s (2seconds), and the background color of 5.5seconds.  This is the speed of these transitions.
+    Transition timing function allows you to set the type of transition you want.  Linear creates a nice smooth transition, but you can choose others such as ease, which starts slow and speeds up.
+    .slider:hover allows you to choose the width of the slider and changes the background color of the tab.
+    The transition feature allows for a transition between these two states of being of this element.
     */
 
 p
     {
-    
+        margin-left: 100px;
+        margin-right: 100px;
     }
 
 .slider
@@ -27,7 +40,7 @@ p
         border-top-right-radius: 5px;
         border-bottom-right-radius: 5px;
         
-        transition: width 12s, background-color: 5.5s;
+        transition: width 2s, background-color: 5.5s;
         transition-timing-function: linear;
         
     }
