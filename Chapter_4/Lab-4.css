@@ -1,42 +1,18 @@
     /* 
-        This animation changes the box from red to blue over a period of 4 seconds by using the @keyframe colorChange animation commands of from and to:
-            p
-                {
-                    width: 100px;
-                    height: 100px;
-                    background-color: red;
-                    
-                    animation: colorChange 4s;
-                }
+        Lab 4:
 
-            @keyframes colorChange
-                {
-                    from {background-color: red;}
-                    to {background-color: blue;}
-                }
-            You need two keyframes, a starting and ending keyframe, here we used from and to.
+        1.  Set your <h1> header to a width of 300px and a height of 50px, with a background color of red.
+        
+        2.  The animation only starts when the user's cursor hovers over the header.
 
-            You can also use percentages which will allow you to use multiple keyframes:
-            p
-                {
-                    width: 100px;
-                    height: 100px;
-                    background-color: red;
-                    
-                    animation: colorChange 4s;
-                }
+        3.  The animation should be 10 seconds long.
 
-            @keyframes colorChange
-                {
-                    0% {background-color: red;}
-                    50% {background-color: red;}
-                    100% {background-color: blue;}
-                }
+        4.  The animation starts with a red background then progress through blue, yellow, green, orange, and ending with purple. The animation then restarts at red.
 
-            This will create an animation of starting at 0% of red, changing to 50% time to green, then to 100% blue.
-
-            To make them run continuously rather than just once, you would use the animation iteration count property: animation-iteration-count: infinite or a number.  Infinite it would of course run without stopping.
+        5.  As long as the user's cursor hovers over the header, the animation will continue to loop from red to purple.
     */
+
+
 
 h1
     {
