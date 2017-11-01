@@ -1,7 +1,41 @@
     /* 
+        This animation changes the box from red to blue over a period of 4 seconds by using the @keyframe colorChange animation commands of from and to:
+            p
+                {
+                    width: 100px;
+                    height: 100px;
+                    background-color: red;
+                    
+                    animation: colorChange 4s;
+                }
 
+            @keyframes colorChange
+                {
+                    from {background-color: red;}
+                    to {background-color: blue;}
+                }
+            You need two keyframes, a starting and ending keyframe, here we used from and to.
 
+            You can also use percentages which will allow you to use multiple keyframes:
+            p
+                {
+                    width: 100px;
+                    height: 100px;
+                    background-color: red;
+                    
+                    animation: colorChange 4s;
+                }
 
+            @keyframes colorChange
+                {
+                    0% {background-color: red;}
+                    50% {background-color: red;}
+                    100% {background-color: blue;}
+                }
+
+            This will create an animation of starting at 0% of red, changing to 50% time to green, then to 100% blue.
+
+            To make them run continuously rather than just once, you would use the animation iteration count property: animation-iteration-count: infinite or a number.  Infinite it would of course run without stopping.
     */
 
 p
