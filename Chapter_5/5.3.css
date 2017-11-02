@@ -1,0 +1,37 @@
+/*
+    inline-block won't really work for this as the text is inline with the square
+    position property of absolute with an offset on the left of 0px and this will give us a square covering the text.  
+    We want the text to wrap around the square.
+    Now we will use the float property which can help us here.
+    Now we will add another colored square and see what happens.
+    
+
+        
+*/
+
+
+
+
+
+
+
+.show-bkg
+    {
+        background-color: grey;
+    }
+
+#target-left
+    {
+        background-color: red;
+        width: 200px;
+        height: 200px;
+        float: left;
+    }
+
+#target-right
+    {
+        background-color: blue;
+        width: 200px;
+        height: 200px;
+        float: right;
+    }
