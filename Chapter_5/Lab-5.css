@@ -1,0 +1,66 @@
+/*
+    inline-block won't really work for this as the text is inline with the square
+    position property of absolute with an offset on the left of 0px and this will give us a square covering the text.  
+    We want the text to wrap around the square.
+    Now we will use the float property which can help us here.
+    Now we will add another colored square and see what happens.
+    
+
+    .show-bkg
+        {
+            background-color: grey;
+            
+        }
+
+
+    #target
+        {
+            background-color: rgb(150,150,255);
+            position: static;
+        }   
+        Offsets:
+        *position: static means that it won't move no matter what changes you make
+        *position: relative means that it will take up the same area and physical position but will display down by 100px down from its current position, on top of the other text.
+        *position: absolute means that it is 100px from the top of the screen, and the position where it was is now filled, as it is no longer in normal flow, and it is on top of the other text.
+        *position: fixed it looks the same as absolute, but the text will now flow with the window as it is now 100px from top of parent element (body element). It stays on the same position on the screen and scrolls over whatever you are scrolling past.
+
+        Z-index lets you determine what shows up on top or behind of whatever else is on the page by using - or + amounts.
+        You can also use percentages for off-sets:  top: 50%
+        You can also do bottom, left, right, etc."
+
+
+    For Lab, style in the following way:
+        1.  Using the "display" property, make it so that 's3' appears on its own line.
+        2.  Paragraphs "p1" and "p2" should appear on the same line right next to each other.
+        3.  The "img1" image should a fixed position that is 200px from the left and 300px from the top.  The image should stay fixed in place on the screen as you scroll down.
+        4.  The "img2" image should have an absolute position that is 500px from the top, floating in front of the text.
+        5.  The "img1" image should appear to be behind the other text when you scroll down.
+        
+*/
+
+
+
+
+
+
+
+.show-bkg
+    {
+        background-color: grey;
+    }
+
+#target-left
+    {
+        background-color: red;
+        width: 200px;
+        height: 200px;
+        float: left;
+    }
+
+#target-right
+    {
+        background-color: blue;
+        width: 200px;
+        height: 200px;
+        float: right;
+    }

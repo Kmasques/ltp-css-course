@@ -14,13 +14,18 @@
             position: static;
         }   
         Offsets:
-        *position: static means that it won't move no matter what changes you make
+        *position: static follows normal flow, which means that it starts in the top left corner and then fills in content going right and then going down finishing in the bottom right corner or as far as it can go into the far right corner.   When the position is set to static, it won't accept change, and won't move no matter what changes you make.
+
         *position: relative means that it will take up the same area and physical position but will display down by 100px down from its current position, on top of the other text.
-        *position: absolute means that it is 100px from the top of the screen, and the position where it was is now filled, as it is no longer in normal flow, and it is on top of the other text.
+
+        *position: absolute means that if it is 100px from the top of the screen, and the position where it was is now filled, as it is no longer in normal flow, and it is on top of the other text.
+
         *position: fixed it looks the same as absolute, but the text will now flow with the window as it is now 100px from top of parent element (body element). It stays on the same position on the screen and scrolls over whatever you are scrolling past.
 
-        Z-index lets you determine what shows up on top or behind of whatever else is on the page by using - or + amounts.
+        *Z-index lets you determine what shows up on top or behind of whatever else is on the page by using - or + amounts. Doing a -1 will put the element beind, and +1 will put it in front.
+
         You can also use percentages for off-sets:  top: 50%
+
         You can also do bottom, left, right, etc.
         
 */

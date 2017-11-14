@@ -1,9 +1,9 @@
 /*
-    inline-block won't really work for this as the text is inline with the square
-    position property of absolute with an offset on the left of 0px and this will give us a square covering the text.  
-    We want the text to wrap around the square.
-    Now we will use the float property which can help us here.
-    Now we will add another colored square and see what happens.
+    inline-block won't really work for this as the text is inline with the square and it will cause a huge amount of white space around the square.
+    If we use a position property of absolute with an offset on the left of 0px, this will give us a square covering the text, and it will abut the left wall of the page.  We don't want this, we want the text to wrap around the square.  To do this we can use the float property which can help us here. 
+    The text now wraps around the square neatly.
+
+    If we add another colored square, and float to the right, and see what happens.  They will float on opposite sides of the page.  If you put both of them float left, they will show up side-by-side on the page.
     
 
         
@@ -33,5 +33,5 @@
         background-color: blue;
         width: 200px;
         height: 200px;
-        float: right;
+        float: left;
     }

@@ -17,6 +17,8 @@
     adding line-height: 50px to the col1 of Test Text, makes the entire inline have to be 50px.  The default line height is whatever the text size is. 
 
     If you switch the inline and block for col1 and col2, you will see each of the spans on a differnt line, and the squares will be not be visible as the line height is zero.  If you want the squares to be visible, you have to use the value of inline-block value like this: display: inline-block; and it will display both squares with the largest square dictating the spacing.
+
+    
 */
 
 
@@ -35,6 +37,6 @@
 .col2
     {
         background-color: red;
-        display: block;
+        display: inline-block;
     }
 
